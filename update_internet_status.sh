@@ -1,7 +1,7 @@
 ##initially only checking for wifi connectivity :)
 
 function internet_status_update {
-	status_string="$( nmcli | grep -o "^wlo1:.*" | cut -f2- -d:) "
+	status_string="$( nmcli | grep -o "^wlp3s0:.*" | cut -f2- -d:) "
 	#removing leading space
 	status_string="$(echo -e "${status_string}" | sed -e 's/^[[:space:]]*//')"
 	#remove trailing space
