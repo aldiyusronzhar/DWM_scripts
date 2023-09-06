@@ -20,7 +20,7 @@ function volume_update {
 			volume_string="+$volume_level"
 		fi
 	else
-		volume_string="婢$volume_level"
+		volume_string="󰖁$volume_level"
 	fi
 	echo $volume_string | tee ~/.scripts/dwm/savedata/volume_string.txt
 	"/home/alzhar/.scripts/dwm/update_all.sh"
