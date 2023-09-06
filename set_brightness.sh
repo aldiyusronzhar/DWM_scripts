@@ -3,11 +3,11 @@
 function set_brightness { 
 	arg1=$1
 	if [[ $arg1 = "up" ]]; then
-		xbacklight -inc 5
+		light -A 5
 
 
 	elif [[ $arg1 = "down" ]]; then
-		xbacklight -dec 5
+		light -U 5
 	fi
 	"/home/alzhar/.scripts/dwm/update_brightness.sh"
 }
